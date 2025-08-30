@@ -1,23 +1,77 @@
 body {
-  font-family: sans-serif;
-  margin: 20px;
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .controls {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   align-items: center;
+  background: #1e1e1e;
+  padding: 12px;
+  border-radius: 8px;
 }
 
-canvas {
-  border: 1px solid #ccc;
-  image-rendering: pixelated;
-  margin-right: 10px;
+.controls label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+input[type='number'],
+input[type='file'] {
+  background: #2e2e2e;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+button {
+  background: #3f51b5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5c6bc0;
+}
+
+#downloadBtn {
+  background: #00897b;
+}
+
+#downloadBtn:hover {
+  background: #26a69a;
 }
 
 .canvas-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
+  justify-content: center;
+}
+
+canvas {
+  border: 1px solid #444;
+  image-rendering: pixelated;
+  background: #1e1e1e;
 }
