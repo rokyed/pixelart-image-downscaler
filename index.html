@@ -2,24 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pixel Art Grid-Based Downscaler</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Pixel Art Grid-Based Downscaler</h1>
-    <div class="controls">
-      <input type="file" id="imageLoader" accept="image/*" />
-      <label>Grid W: <input type="number" id="gridWidth" value="16" /></label>
-      <label>Grid H: <input type="number" id="gridHeight" value="16" /></label>
-      <label>Offset X: <input type="number" id="offsetX" value="0" /></label>
-      <label>Offset Y: <input type="number" id="offsetY" value="0" /></label>
-      <button id="generateBtn">Generate Preview</button>
-      <button id="downloadBtn">Download PNG</button>
-    </div>
-    <div class="canvas-container">
-      <canvas id="sourceCanvas"></canvas>
-      <canvas id="outputCanvas"></canvas>
-    </div>
+    <main class="app">
+      <h1>Pixel Art Grid-Based Downscaler</h1>
+      <div class="controls">
+        <input type="file" id="imageLoader" accept="image/*" />
+        <label>Grid W: <input type="number" id="gridWidth" value="16" /></label>
+        <label>Grid H: <input type="number" id="gridHeight" value="16" /></label>
+        <label>Offset X: <input type="number" id="offsetX" value="0" /></label>
+        <label>Offset Y: <input type="number" id="offsetY" value="0" /></label>
+        <button id="generateBtn">Generate Preview</button>
+        <button id="downloadBtn">Download PNG</button>
+      </div>
+      <div class="canvas-container">
+        <canvas id="sourceCanvas"></canvas>
+        <canvas id="outputCanvas"></canvas>
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
